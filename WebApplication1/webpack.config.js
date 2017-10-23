@@ -34,8 +34,8 @@ module.exports = (env) => {
             ]
         },
         output: { path: path.join(__dirname, clientBundleOutputDir) },
-        plugins: [
-            new ExtractTextPlugin('site.css'),
+        plugins: [ 
+            new ExtractTextPlugin('site.min.css'),
             new webpack.DllReferencePlugin({
                 context: __dirname,
                 manifest: require('./wwwroot/dist/vendor-manifest.json')

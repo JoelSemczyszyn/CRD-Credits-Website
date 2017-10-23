@@ -10,14 +10,14 @@ export default function configureStore(history: History, initialState?: Applicat
     const windowIfDefined = typeof window === 'undefined' ? null : window as any;
     // If devTools is installed, connect to it
     const devToolsExtension = windowIfDefined && windowIfDefined.devToolsExtension as () => GenericStoreEnhancer;
-    const createStoreWithMiddleware = compose(
+    let createStoreWithMiddleware = compose(
         applyMiddleware(thunk, routerMiddleware(history)),
         devToolsExtension ? devToolsExtension() : <S>(next: StoreEnhancerStoreCreator<S>) => next
     )(createStore);
 
-    // Combine all reducers and instantiate the app-wide store instance
+    // Combine all reducers and instantiate the app-wide store instance 
     const allReducers = buildRootReducer(reducers);
-    const store = createStoreWithMiddleware(allReducers, initialState) as Store<ApplicationState>;
+    const store = (<any>createStoreWithMiddleware)(allReducers, initialState) as Store<ApplicationState>;
 
     // Enable Webpack hot module replacement for reducers
     if (module.hot) {

@@ -1,0 +1,279 @@
+﻿/* placeholder stuff */
+
+.main-nav li .glyphicon {
+    margin-right: 10px;
+}
+
+/* test */
+
+/* Highlighting rules for nav menu items */
+.main-nav li a.active,
+.main-nav li a.active:hover,
+.main-nav li a.active:focus {
+    background-color: #4189C7;
+    color: white;
+}
+
+/* Keep the nav menu independent of scrolling and on top of other items */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    body {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* On small screens, convert the nav menu to a vertical sidebar */
+    .main-nav {
+        height: 100%;
+        width: calc(25% - 20px);
+    }
+
+    .main-nav .navbar {
+        border-radius: 0px;
+        border-width: 0px;
+        height: 100%;
+    }
+
+    .main-nav .navbar-header {
+        float: none;
+    }
+
+    .main-nav .navbar-collapse {
+        border-top: 1px solid #444;
+        padding: 0px;
+    }
+
+    .main-nav .navbar ul {
+        float: none;
+    }
+
+    .main-nav .navbar li {
+        float: none;
+        font-size: 15px;
+        margin: 6px;
+    }
+
+    .main-nav .navbar li a {
+        padding: 10px 16px;
+        border-radius: 4px;
+    }
+
+    .main-nav .navbar a {
+        /* If a menu item's text is too long, truncate it */
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* done placeholder stuff */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+html {
+    font-size: 18px;
+
+    @media(max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+
+
+body {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+
+    p {
+        margin-bottom: 1.414em;
+        line-height: 1.75em;
+        font-weight: 300;
+    }
+
+    h1, h2, h3, h4 {
+        margin: 0 0 .8em 0;
+        font-weight: inherit;
+        line-height: 1.2;
+        color: #222;
+    }
+
+    h1 {
+        font-size: 3.998em;
+        margin-bottom: 3.998em;
+    }
+
+    h2 {
+        font-size: 2.827em;
+    }
+
+    h3 {
+        font-size: 1.999em;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 1.414em;
+    }
+
+    small, .font_small {
+        font-size: 0.707em;
+    }
+
+    .color-blue {
+        color: #2c8faf;
+    }
+
+    .color-red {
+        color: #e15a3f;
+    }
+
+    .color-yellow {
+        color: #ebb325;
+    }
+}
+
+#react-app {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.app-container {
+
+    .margin-bottom {
+        margin-bottom: 1em;
+    }
+
+    .margin-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .b-shadow {
+        box-shadow: 0 0 6px rgba(0,0,0,0.4);
+    }
+
+    .s-bg {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .v-bg {
+        width: 100%;
+    }
+
+    > div {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .s1 {
+        .s-content {
+            text-align: center;
+        }
+
+        .l_center {
+            opacity: 0; // TODO : media query this
+        }
+
+        h3 {
+            margin: 40px 0 20px;
+        }
+
+        .s-bg {
+            z-index: -2;
+        }
+    }
+
+    .s2 {
+        overflow: visible;
+
+
+
+        .s-content {
+            max-width: 1150px;
+        }
+
+        .hover-right {
+            top: -150px;
+            right: 50px;
+            position: absolute;
+        }
+    }
+
+    .s3 {
+
+        .s-content {
+            padding: 110px 200px;
+        }
+
+        .p-width {
+            max-width: 700px;
+        }
+
+        .negative-margin {
+            margin-top: -100px;
+            margin-bottom: -100px;
+        }
+
+        .offset-v {
+            position: relative;
+            bottom: 120px;
+        }
+    }
+
+    .s4 {
+        @media (min-width: 768px) {
+            p {
+                max-width: 640px;
+                margin-left: auto;
+                margin-bottom: 4em;
+            }
+
+            h4 {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .s5 {
+        .s-content {
+            padding: 210px 200px;
+        }
+
+        .s5-img-up {
+            position: relative;
+            bottom: 90px;
+        }
+
+        .s5-img-down {
+            position: relative;
+            top: 70px;
+            opacity: .8;
+        }
+    }
+
+    .s6 {
+    }
+
+    @media (min-width: 768px) {
+        .s-content {
+            padding: 130px 200px;
+        }
+    }
+}

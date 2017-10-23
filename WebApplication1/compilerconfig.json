@@ -1,0 +1,6 @@
+﻿[
+  {
+    "inputFile": "ClientApp/css/site.scss",
+    "outputFile": "wwwroot/dist/site.css"
+  }
+]

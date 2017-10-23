@@ -8,9 +8,9 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "skipDefaultLibCheck": true,
-    "strict": true,
+    "strict": false,
     "lib": ["es6", "dom"],
-    "types": ["webpack-env"]
+    "types": [ "webpack-env" ]
   },
   "exclude": [
       "bin",

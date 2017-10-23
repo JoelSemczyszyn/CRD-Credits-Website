@@ -1,5 +1,5 @@
 {
-  "name": "WebApplication1",
+  "name": "crd-react",
   "private": true,
   "version": "0.0.0",
   "dependencies": {
@@ -13,6 +13,8 @@
     "@types/react-router-redux": "5.0.3",
     "@types/webpack": "2.2.15",
     "@types/webpack-env": "1.13.0",
+    "@types/gsap": "1.19.1",
+    "@types/react-responsive": "1.1.8",
     "aspnet-prerendering": "^3.0.1",
     "aspnet-webpack": "^2.0.1",
     "aspnet-webpack-react": "^3.0.0",
@@ -26,6 +28,7 @@
     "history": "4.6.3",
     "jquery": "3.2.1",
     "json-loader": "0.5.4",
+    "gsap": "^1.20.3",
     "node-noop": "1.0.0",
     "react": "15.6.1",
     "react-dom": "15.6.1",
@@ -33,6 +36,7 @@
     "react-redux": "5.0.5",
     "react-router-dom": "4.1.1",
     "react-router-redux": "5.0.0-alpha.6",
+    "react-responsive": "^3.0.0",
     "redux": "3.7.1",
     "redux-thunk": "2.2.0",
     "style-loader": "0.18.2",
