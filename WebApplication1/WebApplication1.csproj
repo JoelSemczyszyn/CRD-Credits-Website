@@ -24,10 +24,13 @@
 
   <ItemGroup>
     <None Remove="ClientApp\components\index.tsx" />
+    <None Remove="Properties\PublishProfiles\CustomProfile.pubxml" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\components\index.tsx" />
+    <TypeScriptCompile Include="node_modules\%40types\typed\typed.d.ts" />
+    <TypeScriptCompile Include="node_modules\react-typist\dist\Typist.d.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,6 +49,10 @@
     <None Include="wwwroot\dist\img\bg_s5.png" />
     <None Include="wwwroot\dist\img\l_center.png" />
     <None Include="wwwroot\dist\img\l_tech.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

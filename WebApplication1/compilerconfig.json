@@ -1,6 +1,7 @@
 ﻿[
   {
-    "inputFile": "ClientApp/css/site.scss",
+    //"inputFile": "ClientApp/css/site.scss",
+    "inputFile": "ClientApp/css/splash.scss",
     "outputFile": "wwwroot/dist/site.css"
   }
 ]
